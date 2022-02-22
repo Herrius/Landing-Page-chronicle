@@ -266,6 +266,10 @@ main {
     .feature-img img{
         width: 35vw;
     }
+    .feature:nth-child(even) .feature-text{
+        order: 1;
+    }
+
 }
 
 /* third module */
@@ -311,7 +315,9 @@ main {
     font-size: 20px;
     line-height: 20px;
 }
+@media (min-width:1025px) {
 
+}
 /* footer */
 .credits {
     background: linear-gradient(90deg, #131838, #12142e);
