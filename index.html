@@ -17,35 +17,38 @@
 </head>
 
 <body>
-  <header class="px-4 fixed-top">
+  <header class="px-chronicle fixed-top">
     <div class="d-flex flex-wrap justify-content-between pt-4 py-3 mb-4">
       <?xml version="1.0" standalone="no"?>
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="logo"
         viewBox="0 0 300 64">
         <image href="css\assets\logo.svg" />
       </svg>
-      <button class="btn btn-primary rounded-3 btn-chronicle">
+      <button class="btn btn-primary rounded-3 btn-chronicle" id="header-btn">
         Apply for early access
       </button>
     </div>
   </header>
   <main>
-    <div class="principal px-4">
-      <div>
+    <div class="principal px-chronicle">
+      <div class="principal-banner">
         <h1 class="title">The future of storytelling is
         </h1>
         <p class="p-primary mt-4">Fast, interactive presentations that are effortlessly beautiful. For founders, modern
           teams and the world’s best storytellers.</p>
-        <form action="" class="mt-5">
-          <input type="email" placeholder="email@example.com" class="form-control">
-          <input type="submit" class="form-control btn btn-primary rounded-3 btn-chronicle p-primary mt-3">
+        <form action="" class="mt-5 email-address">
+          <input type="email" placeholder="Your email address" class="form-control p-3 btn-outilne">
+          <input type="submit" value="Apply for early access" class="form-control btn btn-primary rounded-3 btn-chronicle p-primary mt-3 p-3 submit">
         </form>
+      </div>
+      <div class="principal-img-mobile">
+        <img src="css\assets\presentation0.png" alt="">
       </div>
       <div class="principal-img">
         <img src="css\assets\presentation0.png" alt="">
       </div>
     </div>
-    <div class="group-feature white">
+    <div class="group-feature white px-chronicle">
       <div class="feature">
         <div class="feature-text">
           <h2 class="subtitle blue">Skip the design guesswork</h1>
@@ -78,7 +81,7 @@
         <div class="feature-img"><img src="css\assets\presentation3.png" alt=""></div>
       </div>
     </div>
-    <div class="vision px-4 pt-6 pb-6">
+    <div class="vision px-chronicle pt-6 pb-6">
       <div>image 1</div>
       <div>image 2</div>
       <div>
@@ -103,7 +106,7 @@
         </p>
       </div>
     </div>
-    <div class="testimont px-4 pt-6 white">
+    <div class="testimont px-chronicle pt-6 white">
       <div class="text-center">
         <h1 class="title blue">Backed by the best</h1>
         <p class="p-primary black testimont-text pt-1">Our investors and advisors have played a pivotal role in building some of our favourite products at</p>
@@ -121,19 +124,34 @@
         <img src="css/assets/experience-mobile.png" alt="">
       </div>
     </div>
-    <div class="call-action px-4">
-      <div>
-        <h1 class="title">The future of storytelling is
+    <div class="call-action px-chronicle">
+      <div class="text-center">
+        <h1 class="title ">Experience the future of storytelling
         </h1>
-        <p class="p-primary mt-4">Fast, interactive presentations that are effortlessly beautiful. For founders, modern
-          teams and the world’s best storytellers.</p>
+        <p class="p-primary mt-4 call-action-text mt-4">For founders, modern teams and the world’s best storytellers.</p>
         <form action="" class="mt-5">
-          <input type="email" placeholder="email@example.com" class="form-control">
-          <input type="submit" class="form-control btn btn-primary rounded-3 btn-chronicle p-primary mt-3">
+          <input type="email" placeholder="Your email address" class="form-control p-3 btn-outilne">
+          <input type="submit" class="form-control btn btn-primary rounded-3 btn-chronicle p-primary mt-3 p-3">
         </form>
       </div>
     </div>
   </main>
+  <footer class="credits px-chronicle">
+    <div>  
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="logo"
+        viewBox="0 0 300 64">
+        <image href="css\assets\logo.svg" />
+      </svg>
+    </div>
+    <div class="d-flex flex-wrap gap-4 mt-4">
+      <a href="" class="credits-text">Blog</a>
+      <a href="" class="credits-text">Privacy policy</a>
+      <a href="" class="credits-text">Twitter</a>
+      <a href="" class="credits-text">Linkedin</a>
+      <span class="credits-text">© 2021 ChronicleHQ</span>
+    </div>
+  </footer>
+  <script src="js.js"></script>
 </body>
 
 </html>
