@@ -131,7 +131,9 @@ main {
 .logo {
     height: 2em;
     filter: invert(100%) sepia(0%) saturate(7469%) hue-rotate(13deg) brightness(111%) contrast(106%);
+
 }
+
 
 .btn-chronicle {
     min-height: 2em;
@@ -171,6 +173,7 @@ main {
 .principal-img-mobile img {
     position: relative;
     top: 45px;
+    left: 25%;
     width: 435px;
     object-fit: fill;
 }
@@ -179,7 +182,9 @@ main {
     main {
         margin: 0;
     }
-
+    .px-chronicle{
+        padding: 0 5vw;
+    }
   
 
     #header-btn {
@@ -213,6 +218,7 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
 
     .email-address {
@@ -228,9 +234,16 @@ main {
     .submit {
         margin-top: 0 !important;
     }
-
+   
 }
-
+@media (min-width:1440px) {
+    main {
+        margin: 0;
+    }
+    .px-chronicle{
+        padding: 0 20vw;
+    }
+}
 /* second module */
 .group-feature {
     padding-top: 100px;
@@ -244,9 +257,11 @@ main {
 .feature-text .subtitle {
     padding-bottom: 24px;
 }
-
+.feature-img{
+    width: 100%;
+}
 .feature-img img {
-    width: 400px;
+    width: inherit;
     object-fit: fill;
 }
 
@@ -258,13 +273,14 @@ main {
     }
     .feature-text{
         padding: 0 calc(20%*0.1);
+        width: 100%;
     }
     .feature-img{
-        width: 50vw;
+        width: 100%;
         padding: 0 calc(20%*0.1);
     }
     .feature-img img{
-        width: 35vw;
+        width: inherit;
     }
     .feature:nth-child(even) .feature-text{
         order: 1;
@@ -275,17 +291,80 @@ main {
 /* third module */
 .vision {
     background-color: var(--color-secundary);
+    padding: 192px 0 160px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
-
+.vision-right{
+    order: 10;
+}
 .vision-text {
     font-size: 1.5rem;
     line-height: 40px;
+    order: 1;
 }
 
 .d-flex img {
     width: 3.2rem;
 }
+.vision-left, .vision-right{
+    position: relative;
+    height: 20vw;
+}
+.vision-left img, .vision-right img{
+    height: inherit;
+}
+@media (min-width:1025px) {
+    .vision{
+        display: block;
+        padding: 192px 0 160px;
+        position: relative;
+    }
+    
+    .vision-left, .vision-right{
+        position: absolute;
+        display: block;
+        height: 400px;
+    }
+    .vision-left img, .vision-right img{
+        height: inherit;
+    }
+    .vision-left{
+        left: 1%;
+        top: 0%;
+    }
+    .vision-right{
+        left: 74%;
+        top: 0%;
+    }
+    .vision-history{
+        padding: 0 10vw;
+    }
+    .vision-history h1{
+        padding: 0;
+        padding-bottom: 112px;
+        text-align: center;
+        font-size: 12vw;
+    }
+    .vision-history p{
+        max-width: 574px;
+        margin: 0 auto;
+    }
+}
+.vision-history h1{
+    padding: 0;
+    padding-bottom: 112px;
+    text-align: center;
+    font-size: 12vw;
+    line-height: 100px;
+}
+.vision-history p{
+    max-width: 600px;
+    margin: 0 auto;
 
+}
+/* forty module */
 .testimont-text {
     font-size: 19px;
     filter: opacity(0.5);
@@ -302,10 +381,20 @@ main {
     object-fit: contain;
     width: 435px;
     top: 50px;
-    right: 48px;
+    left: 15%;
 }
-
-/* forty module */
+@media (min-width:1025px) {
+    .testimon-image{
+        display: none;
+    }
+    .text-center{
+        margin: 0 auto;
+    }
+    .testimont{
+        padding: 128px 0;
+    }
+}
+/* fifty module */
 .call-action {
     padding-top: 224px;
     padding-bottom: 112px;
@@ -315,8 +404,36 @@ main {
     font-size: 20px;
     line-height: 20px;
 }
+.call-action-left, .call-action-right{
+    display: none;
+}
 @media (min-width:1025px) {
+    .call-action-left, .call-action-right{
+        display: block;
+    }
+    .call-action{
+        min-height: 90vh;
+        padding: 0;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+
+    }
+    .text-center{
+        align-self: flex-end;
+        max-width: min(816px,40%);
+        margin-bottom: 112px;
+    }
+    .text-center form{
+        margin: 1.5rem auto;
+        width: 75%;
+    }
+    .call-action-right img, .call-action-left img{
+        max-height: 90vh;
+    }
+    
 }
 /* footer */
 .credits {
@@ -334,4 +451,11 @@ main {
 .credits-text:hover {
     color: var(--color-background);
     filter: none;
+}
+@media (min-width:1025px) {
+    .credits{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

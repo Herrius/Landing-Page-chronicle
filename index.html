@@ -32,7 +32,7 @@
   <main>
     <div class="principal px-chronicle">
       <div class="principal-banner">
-        <h1 class="title">The future of storytelling is
+        <h1 class="title">The future of storytelling is <span id="typed"></span>
         </h1>
         <p class="p-primary mt-4">Fast, interactive presentations that are effortlessly beautiful. For founders, modern
           teams and the world’s best storytellers.</p>
@@ -82,29 +82,30 @@
       </div>
     </div>
     <div class="vision px-chronicle pt-6 pb-6">
-      <div><img src="css/assets/experience-left.png" alt=""></div>
-      <div><img src="css/assets/experience-right.png" alt=""></div>
-      <div>
-        <h1 class="title text-center">Our Vision
+      <div class="vision-left"><img src="css/assets/vision-left.png" alt=""></div>
+      <div class="vision-right"><img src="css/assets/vision-right.png" alt=""></div>
+      <div class="vision-history">
+        <h1 class="title ">Our Vision
         </h1>
-        <p class="p-primary vision-text">
+        <p class="p-primary vision-text pt-4">
           The slides format was designed in the 80s to create 📽 35 mm physical projector
           slides. But even after decades, this format hasn’t conceptually evolved.
         </p>
-        <p class="p-primary vision-text">
+        <p class="p-primary vision-text pt-4">
           Our storytelling needs have dramatically changed. Attention spans have plumeted. Social media has shaped how
           we consume information. We have been catapulted into remote work.
         </p>
-        <p class="p-primary vision-text">
+        <p class="p-primary vision-text pt-4">
           That’s why we are building Chronicle - a new format that is nothing like slides.
         </p>
-        <p class="p-primary vision-text">
+        <p class="p-primary vision-text pt-4">
           Chronicle is ⚡️ lightning fast, 🙂 delightfully inclusive, and 🔥 beautiful by default.
         </p>
-        <p class="p-primary vision-text">
+        <p class="p-primary vision-text pt-4">
           This is the future of presentations ✨
         </p>
       </div>
+      
     </div>
     <div class="testimont px-chronicle pt-6 white">
       <div class="text-center">
@@ -125,14 +126,20 @@
       </div>
     </div>
     <div class="call-action px-chronicle">
+      <div class="call-action-left">
+        <img src="css/assets/experience-left.png" alt="">
+      </div>
       <div class="text-center">
         <h1 class="title ">Experience the future of storytelling
         </h1>
-        <p class="p-primary mt-4 call-action-text mt-4">For founders, modern teams and the world’s best storytellers.</p>
-        <form action="" class="mt-5">
+        <p class="p-primary mt-4 call-action-text">For founders, modern teams and the world’s best storytellers.</p>
+        <form action="" class="mt-5 email-address">
           <input type="email" placeholder="Your email address" class="form-control p-3 btn-outilne">
-          <input type="submit" class="form-control btn btn-primary rounded-3 btn-chronicle p-primary mt-3 p-3">
+          <input type="submit" class="form-control btn btn-primary rounded-3 btn-chronicle p-primary mt-3 p-3 submit">
         </form>
+      </div>
+      <div class="call-action-right">
+        <img src="css/assets/experience-right.png" alt="">
       </div>
     </div>
   </main>
@@ -151,6 +158,8 @@
       <span class="credits-text">© 2021 ChronicleHQ</span>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="js.js"></script>
 </body>
 
