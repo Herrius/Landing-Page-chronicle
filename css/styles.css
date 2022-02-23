@@ -56,6 +56,7 @@ html, body {
 
 main {
     margin-top: 7.5rem;
+
 }
 
 /* styles universal */
@@ -167,14 +168,13 @@ main {
 }
 
 .principal-img-mobile {
-    height: 400px;
+    width: 100%;
 }
 
 .principal-img-mobile img {
     position: relative;
-    top: 45px;
-    left: 25%;
-    width: 435px;
+    top: 10rem;
+    width: inherit;
     object-fit: fill;
 }
 
@@ -205,11 +205,11 @@ main {
 
     .principal-img {
         display: block;
-
+        width: 100%;
     }
 
     .principal-img img {
-        width: 100%;
+        width: 500px;
         object-fit: contain;
 
     }
@@ -293,15 +293,15 @@ main {
     background-color: var(--color-secundary);
     padding: 192px 0 160px;
     position: relative;
-    display: flex;
-    justify-content: space-between;
 }
 .vision-right{
+    top: 160px;
     order: 10;
+    left: 69%;
 }
 .vision-text {
     font-size: 1.5rem;
-    line-height: 40px;
+    line-height: default;
     order: 1;
 }
 
@@ -309,8 +309,16 @@ main {
     width: 3.2rem;
 }
 .vision-left, .vision-right{
+    position: absolute;
+    height: 200px;
+}
+.vision-right img{
     position: relative;
-    height: 20vw;
+    left: 15%;
+}
+.vision-left{
+    top: 160px;
+    right: 73%;
 }
 .vision-left img, .vision-right img{
     height: inherit;
@@ -334,6 +342,9 @@ main {
         left: 1%;
         top: 0%;
     }
+    .vision-text{
+        line-height: 40px;
+    }
     .vision-right{
         left: 74%;
         top: 0%;
@@ -352,9 +363,11 @@ main {
         margin: 0 auto;
     }
 }
+.vision-history{
+    padding: 20px;
+}
 .vision-history h1{
     padding: 0;
-    padding-bottom: 112px;
     text-align: center;
     font-size: 12vw;
     line-height: 100px;
@@ -373,15 +386,17 @@ main {
 }
 
 .testimon-image {
-    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .testimon-image img {
     position: relative;
     object-fit: contain;
-    width: 435px;
-    top: 50px;
-    left: 15%;
+    width: inherit;
+    top: 10rem;
+    width: 450px;
 }
 @media (min-width:1025px) {
     .testimon-image{
